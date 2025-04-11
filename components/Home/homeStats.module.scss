@@ -1,0 +1,24 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15rem;
+    gap: 1.8rem;
+    >div{
+   >p{     display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        .stats{
+            font-size: 2rem;
+            font-family: "Anton";
+            font-weight: bold;
+            color: aqua;
+        }
+        .subTitle{
+            font-size: 1rem;
+            color: #d2d1d1
+        }
+
+   }
+    }
+}

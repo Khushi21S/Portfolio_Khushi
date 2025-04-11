@@ -1,0 +1,23 @@
+.outerContainer {
+    padding: 3rem 15rem 3rem 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    >.emailId{
+        font-family: "Anton";
+        font-size: 2rem;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+          }
+    }
+    >.copyright{
+     color: #a7a5a5;
+     font-size: 0.9rem;
+    }
+  }

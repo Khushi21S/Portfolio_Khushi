@@ -1,0 +1,75 @@
+.outerContainer {
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  > div {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+
+    > span {
+      font-family: "Anton";
+    }
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+     > a  {
+      
+      > .projectName {
+        position: relative;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-family: "Anton";
+        font-weight: bold;
+        overflow: hidden;
+        display: flex;
+
+        color: white; // Initial color
+
+        background: linear-gradient(90deg, aqua 0%, aqua 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right; // hide color at start
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-position 0.6s ease;
+
+        > span {
+            display: flex;
+            align-items: center;
+            
+            img {
+              margin-left: 8px;
+              opacity: 0;
+              transform: translateX(-5px);
+              transition: all 0.4s ease;
+            }
+          }
+      }}
+
+      > div {
+        display: flex;
+        font-size: 0.9rem;
+        gap: 0.5rem;
+        align-items: center;
+      }
+
+      .separation {
+        display: block;
+        height: 10px;
+        width: 10px;
+        background-color: #787777;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.outerContainer:hover .projectName {
+  background-position: left; 
+
+  img {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

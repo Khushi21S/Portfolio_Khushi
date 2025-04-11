@@ -1,0 +1,15 @@
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    >.title{
+        font-size: 2.5rem;
+        font-family: "Anton";
+        font-weight: bold;
+    }
+    .company , .time {
+        color: #d2d1d1 ;
+    } 
+    
+}

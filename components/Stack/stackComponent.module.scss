@@ -1,0 +1,27 @@
+.outerContainer{
+    display: flex;
+    gap: 10rem;
+    >p{
+        font-size: 2.5rem;
+        font-family: "Anton";
+        font-weight: bold;
+        width: 14rem;
+    }
+    >div{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem 1rem;
+  width: 40rem;
+  >div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    >span{
+        font-size: 1.5rem;
+    }
+  }
+
+    }
+}
