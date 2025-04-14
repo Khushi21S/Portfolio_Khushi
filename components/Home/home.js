@@ -9,7 +9,7 @@ const HomeSection = () => {
           <span className={styles.colorChange}>FRONTEND</span>
           <span> DEVELOPER</span>
           <p>
-            Hi! I'm Khushi. A creative Frontend Developer with 1+ year of
+            Hi! I&apos;m Khushi. A creative Frontend Developer with 1+ year of
             experience in building high-performance, scalable, and responsive
             web solutions.
           </p>

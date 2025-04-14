@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <hr className={styles.horizontalLine}></hr>
       <div className={styles.section2}>
-        <p className={styles.boldText}>Hi, I'm Khushi.</p>
+        <p className={styles.boldText}>Hi, I&apos;m Khushi.</p>
         <p className={styles.description}>
           As a frontend web developer, I transform ideas into innovative
           solutions, crafting seamless and intuitive user experiences. I focus
