@@ -14,25 +14,25 @@ export default function Home() {
     <div className={styles.page}>
       <Header />
       <div className={styles.wrapperContainer}>
-      <section id="home">
+      <section id="home" className={styles.section1}>
         <HomeSection />
         
       </section>
       <HomeStats />
-      <section id="about">
+      <section id="about" className={styles.section1}>
         <About />
        
       </section>
       <Stack />
-      <section id="experience">
+      <section id="experience" className={styles.section1}>
         <Experience />
       </section>
 
-      <section id="projects">
+      <section id="projects" className={styles.section1}>
         <Project />
       </section>
 
-      <section id="contact">
+      <section id="contact" className={styles.section1}>
         <Footer />
       </section>
       </div>
