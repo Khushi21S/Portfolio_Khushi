@@ -8,7 +8,7 @@
     gap: 3rem;
 
     .biggerText{
-        font-size: 3.75rem;
+        font-size: clamp(2.2rem, 3vw, 3.75rem);;
         font-weight: 100;
         
     }
@@ -32,16 +32,53 @@
 
 
     >.boldText{
-        font-size:3rem;
+        font-size:clamp(2rem, 3vw, 3rem);
         white-space: nowrap;
         
     }
     >.description{
-        padding-right: 10rem;
-        width: 40rem;
+        width:100%;
         font-size: 1rem;
         line-height: 150%;
         margin-top:1rem;
         color: #d2d1d1;
     }
 }
+
+@media screen and (max-width: 820px){
+
+    .outerContainer{
+        padding: 3rem 1rem 3rem 0rem;
+    }
+
+}
+
+@media screen and (max-width: 768rem){
+    .outerContainer{
+        padding: 0rem 4rem 3rem 5rem;
+    }
+
+    .section2{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 592px){
+    .outerContainer{
+        padding: 0rem 4rem 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .outerContainer{
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .section1 {
+        .biggerText{
+            font-size: 1.5rem;
+        }
+    }
+}
+

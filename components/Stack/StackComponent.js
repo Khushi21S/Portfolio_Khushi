@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./stackComponent.module.scss";
 import Image from "next/image";
-import javascript from "../../public/js.png";
+
 
 
 const StackComponent = ({title, items}) => {

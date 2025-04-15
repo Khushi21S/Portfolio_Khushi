@@ -1,24 +1,66 @@
-.outerContainer{
-    padding: 5% 5% 4% 4%;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    
-    >div{
-        display: flex;
-    justify-content: flex-end;
-    gap: 3rem;
-align-items: flex-end;
-    color: #ffffff;
-    font-size: 1.2rem;
-        >span{
-            cursor: pointer;
+.outerContainer {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;       
+  padding: 2% 5% 4% 4%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  
+    .desktop {
+      display: flex;
+      justify-content: flex-end;
+      gap: 3rem;
+      align-items: flex-end;
+      color: #ffffff;
+      font-size: 1.2rem;
+  
+      a {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+  
+        span {
+          transition: color 0.3s ease;
         }
-        >span:hover{
-            color: aqua;
+  
+        &:hover span {
+          color: aqua;
         }
-        
+      }
     }
+  
+    .mobile {
+      display: none;
+  
+      .hamburgerIcon {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    .outerContainer {
+      justify-content: center;
+    }
+  }
+  
 
-
-}
+  @media screen and (max-width: 768px) {
+    .outerContainer {
+      display: flex;
+      justify-content: flex-end;
+  
+      .desktop {
+        display: none;
+      }
+  
+      .mobile {
+        display: block;
+      }
+    }
+  }
+  

@@ -1,11 +1,11 @@
 .outerContainer{
     display: flex;
-    gap: 10rem;
+    gap: 10%;
     >p{
-        font-size: 2.5rem;
+        font-size: clamp(1.5rem, 2.5vw, 2.5rem);
         font-family: "Anton";
         font-weight: bold;
-        width: 14rem;
+        width: 26%;
     }
     >div{
 
@@ -13,15 +13,31 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 1.5rem 1rem;
-  width: 40rem;
+
   >div{
     display: flex;
     align-items: center;
     gap: 1rem;
     >span{
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
     }
   }
 
     }
+}
+
+@media screen and (max-width: 768px) {
+  .outerContainer{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 518px){
+
+  .outerContainer > div{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+    
 }

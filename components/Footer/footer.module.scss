@@ -9,7 +9,7 @@
 
     >.emailId{
         font-family: "Anton";
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 2vw, 2rem);
         font-weight: bold;
 
         &:hover {
@@ -21,3 +21,40 @@
      font-size: 0.9rem;
     }
   }
+
+  @media screen and (max-width: 820px){
+
+    .outerContainer{
+        padding: 3rem 0rem 3rem 0rem;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+
+    .outerContainer {
+    >.emailId{
+      font-size: 1.3rem;
+
+
+    }
+    >.copyright{
+      font-size: 0.8rem;
+    }
+  }
+  }
+
+  @media screen and (max-width: 325px){
+    .outerContainer {
+      >.emailId{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  
+
+//responsive for mobile
+//Sidebar
+//animations on scroll
+//progressbar
+//resume download option

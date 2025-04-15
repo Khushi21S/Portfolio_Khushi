@@ -14,8 +14,47 @@
 padding: 2rem;
   gap: 64px;
   font-family: var(--font-geist-sans);
+
+  .wrapperContainer{
+    margin-top: 220rem;
+  }
+
+  >section{
+    width: 100%;
+  }
+
+  
   
 }
 
+@media screen and (max-width: 768px) {
+
+  .page{
+    .wrapperContainer{
+      margin-top: 210rem;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 520px) {
+
+  .page{
+    .wrapperContainer{
+      margin-top: 215rem;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 325px) {
+
+  .page{
+    .wrapperContainer{
+      margin-top: 225rem;
+    }
+  }
+  
+}
 
 

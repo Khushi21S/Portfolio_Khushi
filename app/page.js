@@ -11,15 +11,31 @@ import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-<div className={styles.page}>
+    <div className={styles.page}>
       <Header />
-      <HomeSection />
+      <div className={styles.wrapperContainer}>
+      <section id="home">
+        <HomeSection />
+        
+      </section>
       <HomeStats />
-      <About />
-      <Stack/>
-      <Experience/>
-      <Project/>
-      <Footer/>
-    </div>    
+      <section id="about">
+        <About />
+       
+      </section>
+      <Stack />
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="projects">
+        <Project />
+      </section>
+
+      <section id="contact">
+        <Footer />
+      </section>
+      </div>
+    </div>
   );
 }

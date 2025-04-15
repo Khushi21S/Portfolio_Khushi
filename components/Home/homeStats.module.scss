@@ -9,7 +9,7 @@
         flex-direction: column;
         gap: 0.3rem;
         .stats{
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 2vw, 2rem);
             font-family: "Anton";
             font-weight: bold;
             color: aqua;
@@ -20,5 +20,30 @@
         }
 
    }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .outerContainer{
+       align-items: center;
+       flex-direction: row;
+       margin-left: 5rem;
+       margin-bottom: 11rem;
+
+       >div >p{
+        align-items: center;
+       }
+    }
+}
+
+@media screen and (max-width: 592px){
+    .outerContainer{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 518px){
+    .outerContainer{
+        margin-left: 0rem;
     }
 }
