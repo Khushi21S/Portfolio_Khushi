@@ -17,7 +17,7 @@ padding: 2rem;
 
   .wrapperContainer{
     margin-top: 220rem;
-    >p{
+    >.emailId{
       transform: rotate(-90deg);
       position: absolute;
       left: 0%;
@@ -54,7 +54,7 @@ padding: 2rem;
   .page{
     .wrapperContainer{
       margin-top: 210rem;
-      >p{
+      >.emailId{
         display: none;
       }
     }

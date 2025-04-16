@@ -14,7 +14,7 @@ export default function Home() {
     <div className={styles.page}>
       <Header />
       <div className={styles.wrapperContainer}>
-        <p>worksharma.khushi21@gmail.com</p>
+        <p className={styles.emailId}>worksharma.khushi21@gmail.com</p>
         <section id="home" className={styles.section1}>
       <HomeSection />
           <HomeStats />
