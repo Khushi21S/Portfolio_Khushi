@@ -1,18 +1,17 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
 import styles from "./sidebar.module.scss";
 import Image from "next/image";
 import crossIcon from "../../public/close.png";
+import Link from "next/link";
 
 const Sidebar = ({ closeSidebar }) => {
   const navItems = [
-    { label: "Home", target: "home" },
-    { label: "About me", target: "about" },
-    { label: "Experience", target: "experience" },
-    { label: "Projects", target: "projects" },
-    { label: "Get in Touch", target: "contact" },
+    { label: "Home", target: "#home" },
+    { label: "About me", target: "#about" },
+    { label: "Experience", target: "#experience" },
+    { label: "Projects", target: "#projects" },
   ];
 
   return (
@@ -36,16 +35,14 @@ const Sidebar = ({ closeSidebar }) => {
         </div>
         <nav className={styles.nav}>
           {navItems.map(({ label, target }) => (
-            <ScrollLink
-              key={target}
-              to={target}
-              smooth={true}
-              duration={500}
-              offset={-60}
-              onClick={closeSidebar}
-            >
-              {label}
-            </ScrollLink>
+               <Link
+               key={target}
+               href={target}
+               onClick={closeSidebar}
+    
+             >
+               <span>{label}</span>
+             </Link>
           ))}
         </nav>
       </motion.div>

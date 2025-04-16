@@ -1,7 +1,13 @@
-import React from "react";
+"use client"
+
+import React, {useEffect} from "react";
 import styles from "./about.module.scss";
 
+
+
 const About = () => {
+
+
   return (
     <div className={styles.outerContainer}>
       <div className={styles.section1}>

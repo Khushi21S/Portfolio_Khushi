@@ -17,21 +17,46 @@ padding: 2rem;
 
   .wrapperContainer{
     margin-top: 220rem;
+    >p{
+      transform: rotate(-90deg);
+      position: absolute;
+      left: 0%;
+      right: 98%;
+      top:60%;
+      font-size: 0.8rem;
+    }
   }
 
   >.section1{
     width: 100%;
+    scroll-margin-top: 100px;
   }
 
   
   
 }
 
+@media screen and (max-width: 1441px) {
+
+  .page{
+    .wrapperContainer{
+      margin-top: 201rem;
+    }
+  }
+  
+}
+
+
 @media screen and (max-width: 768px) {
+
+
 
   .page{
     .wrapperContainer{
       margin-top: 210rem;
+      >p{
+        display: none;
+      }
     }
   }
   

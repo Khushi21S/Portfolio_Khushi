@@ -4,10 +4,12 @@
   left: 0;
   right: 0;
   z-index: 1000;       
-  padding: 2% 5% 4% 4%;
+  padding: 2% 5% 2% 4%;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  // background-color:rgb(32, 139, 139);
+  // z-index: -2;
   
     .desktop {
       display: flex;
@@ -34,7 +36,6 @@
     }
   
     .mobile {
-      display: none;
   
       .hamburgerIcon {
         cursor: pointer;

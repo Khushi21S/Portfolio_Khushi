@@ -1,9 +1,15 @@
-import React from "react";
+"use client"
+
+import React, {useEffect} from "react";
 import styles from "./home.module.scss";
 
+
+
 const HomeSection = () => {
+ 
   return (
-    <div className={styles.outerContainer}>
+    <div className={styles.outerContainer} >
+      {/* <div className={styles.homeStats}><HomeStats/></div> */}
       <div>
         <div>
           <span className={styles.colorChange}>FRONTEND</span>
@@ -14,7 +20,7 @@ const HomeSection = () => {
             web solutions.
           </p>
         </div>
-        <div className={styles.buttonContainer}>
+        <div className={styles.buttonContainer} >
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=worksharma.khushi21@gmail.com&su=Let's%20Work%20Together&body=Hi%20Khushi,%0D%0A%0D%0AI would love to discuss a project with you."
             target="_blank"
