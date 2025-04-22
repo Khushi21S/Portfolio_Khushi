@@ -13,7 +13,6 @@ const Sidebar = ({ closeSidebar }) => {
     { label: "Experience", target: "#experience" },
     { label: "Projects", target: "#projects" },
   ];
-
   return (
     <>
       <motion.div

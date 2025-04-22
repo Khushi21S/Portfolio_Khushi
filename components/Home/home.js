@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useEffect} from "react";
+import React from "react";
 import styles from "./home.module.scss";
 
 
@@ -9,7 +9,6 @@ const HomeSection = () => {
  
   return (
     <div className={styles.outerContainer} >
-      {/* <div className={styles.homeStats}><HomeStats/></div> */}
       <div>
         <div>
           <span className={styles.colorChange}>FRONTEND</span>

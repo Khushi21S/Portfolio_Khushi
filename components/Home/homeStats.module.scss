@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 15rem;
+    padding: 2rem;
     gap: 1.8rem;
     >div{
    >p{     display: flex;
@@ -38,12 +39,12 @@
 
 @media screen and (max-width: 592px){
     .outerContainer{
-        margin-left: 2rem;
+        padding-left: 2rem;
     }
 }
 
 @media screen and (max-width: 518px){
     .outerContainer{
-        margin-left: 0rem;
+        padding-left: 0rem;
     }
 }

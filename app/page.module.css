@@ -6,80 +6,11 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-padding: 2rem;
-  gap: 64px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
   font-family: var(--font-geist-sans);
-
-  .wrapperContainer{
-    margin-top: 220rem;
-    >.emailId{
-      transform: rotate(-90deg);
-      position: absolute;
-      left: 0%;
-      right: 98%;
-      top:60%;
-      font-size: 0.8rem;
-    }
-  }
-
-  >.section1{
-    width: 100%;
-    scroll-margin-top: 100px;
-  }
-
-  
-  
 }
-
-@media screen and (max-width: 1441px) {
-
-  .page{
-    .wrapperContainer{
-      margin-top: 201rem;
-    }
-  }
-  
-}
-
-
-@media screen and (max-width: 768px) {
-
-
-
-  .page{
-    .wrapperContainer{
-      margin-top: 210rem;
-      >.emailId{
-        display: none;
-      }
-    }
-  }
-  
-}
-
-@media screen and (max-width: 520px) {
-
-  .page{
-    .wrapperContainer{
-      margin-top: 215rem;
-    }
-  }
-  
-}
-
-@media screen and (max-width: 325px) {
-
-  .page{
-    .wrapperContainer{
-      margin-top: 225rem;
-    }
-  }
-  
-}
-
-

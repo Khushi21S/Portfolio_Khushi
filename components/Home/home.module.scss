@@ -2,8 +2,8 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding-top: 8%;
-  padding-bottom: 10%;
+  // padding-top: 8%;
+  // padding-bottom: 10%;
 
   > div {
     display: flex;
@@ -52,18 +52,13 @@
     }
   }
 
-  // .homeStats{
-  //   display: flex;
 
-  // }
 }
-
-// @media screen and (max-width: 1441px){
-//   .outerContainer{
-//     padding-top: 1%;
-//     padding-bottom: 0%;
-//   }
-// }
+@media screen and (max-width: 1080px){
+  .outerContainer{
+    padding-top : 11%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .outerContainer {

@@ -1,0 +1,49 @@
+.wrapperContainer{
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding-top: 10%;
+    >.emailId{
+      transform: rotate(-90deg);
+      position: fixed;
+      left: 0%;
+      right: 98%;
+      top:50%;
+      font-size: 0.8rem;
+    }
+}
+
+.section1{
+    width: 100%;
+    scroll-margin-top: 100px;
+}
+
+// @media screen and (max-width: 1441px) {
+//     .wrapperContainer{
+//        top: 20%;
+//     }
+// }
+
+@media screen and (max-width: 768px) {
+    .wrapperContainer{
+        >.emailId{
+            display: none;
+        }
+    }
+}
+
+// @media screen and (max-width: 520px) {
+//     .wrapperContainer{
+//         margin-top: 215rem;
+//     }
+// }
+
+// @media screen and (max-width: 325px) {
+//     .wrapperContainer{
+//         margin-top: 225rem;
+//     }
+// }
+  
+  
+  
