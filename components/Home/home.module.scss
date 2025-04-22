@@ -63,7 +63,7 @@
 @media screen and (max-width: 768px) {
   .outerContainer {
     justify-content: center;
-    padding-top: 1%;
+    padding-top: 9%;
 
     > div {
       width: 70%;
@@ -74,9 +74,15 @@
   }
 }
 
+@media screen and (max-width: 567px){
+  .outerContainer{
+    padding-top: 20%;
+  }
+}
+
 @media screen and (max-width:525px){
     .outerContainer > div{
-        width: 100%;
+        width: 80%;
     }
 }
 
