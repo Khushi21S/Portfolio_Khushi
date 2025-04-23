@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import BackgroundVideo from "@/components/BackgroundVideo/BackgroundVideo";
+import VideoWrapper from "@/components/BackgroundVideo/VideoWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,13 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <BackgroundVideo />
+        <VideoWrapper />
         {children}
       </body>
     </html>
