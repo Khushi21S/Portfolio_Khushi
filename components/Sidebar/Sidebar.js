@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import styles from "./sidebar.module.scss";
 import Image from "next/image";
 import crossIcon from "../../public/close.png";
-import Link from "next/link";
 
 
-const Sidebar = ({ closeSidebar }) => {
+
+const Sidebar = ({ closeSidebar, containerRef }) => {
   const navItems = [
     {
       label: "Home",
@@ -31,14 +31,26 @@ const Sidebar = ({ closeSidebar }) => {
     },
   ];
   const socialItems = [
-    { label: "Github", redirectLink: "https://github.com/Khushi21S" },
+    { label: "Github", redirectLink: "https://github.com/Khushi21S", backgroundColor: "rgb(234 179 8 / var(--tw-bg-opacity, 1))"},
     {
       label: "LinkedIn",
-      redirectLink: "https://www.linkedin.com/in/khushi-sharma-971bb7209/",
+      redirectLink: "https://www.linkedin.com/in/khushi-sharma-971bb7209/",  backgroundColor: "rgb(59 130 246 / var(--tw-bg-opacity, 1))"
     },
-    { label: "Leetcode", redirectLink: "https://leetcode.com/u/khushi21S/" },
-    { label: "Twitter", redirectLink: "https://x.com/basaajaurkal" },
+    { label: "Leetcode", redirectLink: "https://leetcode.com/u/khushi21S/",  backgroundColor: "rgb(20 184 166 / var(--tw-bg-opacity, 1))" },
+    { label: "Twitter", redirectLink: "https://x.com/basaajaurkal",    backgroundColor: "rgb(99 102 241 / var(--tw-bg-opacity, 1))" },
   ];
+
+  // const handleScroll = (target) => {
+  //   const id = target.replace("#", "");
+  //   const section = containerRef?.current?.querySelector(`#${id}`);
+  //   if (section) {
+  //     containerRef.current.scrollTo({
+  //       top: section.offsetTop,
+  //       behavior: "smooth",
+  //     });
+  //     closeSidebar();
+  //   }
+  // }
 
   return (
     <>
@@ -70,7 +82,7 @@ const Sidebar = ({ closeSidebar }) => {
             <div>
               <span>SOCIAL</span>
               <nav className={styles.nav}>
-                {socialItems.map(({ label, redirectLink }) => (
+                {socialItems.map(({ label, redirectLink, backgroundColor }) => (
                   <a
                     key={redirectLink}
                     href={redirectLink}
@@ -78,28 +90,31 @@ const Sidebar = ({ closeSidebar }) => {
                     rel="noopener noreferrer"
                     onClick={closeSidebar}
                   >
-                    <span>{label}</span>
+                    <span>
+                    <span
+                      style={{ backgroundColor }}
+                      className={styles.coloredBall}
+                    ></span>{label}</span>
                   </a>
                 ))}
               </nav>
             </div>
-            <div>
+            {/* <div>
               <span>MENU</span>
               <nav className={styles.nav}>
                 {navItems.map(({ label, target, backgroundColor }) => (
-                  <Link href={target} key={target}
-                  >
-                    <span>
-                      <span
-                        style={{ backgroundColor }}
-                        className={styles.coloredBall}
-                      ></span>
-                      {label}
-                    </span>
-                  </Link>
+                  <a href={target} key={target} onClick={closeSidebar}>
+                  <span>
+                    <span
+                      style={{ backgroundColor }}
+                      className={styles.coloredBall}
+                    ></span>
+                    {label}
+                  </span>
+                </a>
                 ))}
               </nav>
-            </div>
+            </div> */}
           </div>
           <div className={styles.contactDetails}>
             <p className={styles.titleText}>GET IN TOUCH</p>

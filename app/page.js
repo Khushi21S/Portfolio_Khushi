@@ -6,7 +6,6 @@ import PageClient from "@/components/PageClient/PageClient";
 export default function Home() {
   return (
     <main className={styles.page}>
-      <Header />
       <PageClient />
     </main>
   );

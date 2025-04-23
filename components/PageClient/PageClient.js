@@ -13,6 +13,7 @@ import Project from "../Projects/Project";
 import Footer from "../Footer/Footer";
 import InitialLoad from "../InitialLoad/InitialLoad";
 import AnimatedSection from "../AnimatedSection/AnimatedSection";
+import Header from "../Header/header";
 
 const PageClient = () => {
   const [showContent, setShowContent] = useState(false);
@@ -30,6 +31,8 @@ const PageClient = () => {
   
 
   return (
+    <>
+    <Header containerRef={containerRef}/>
     <AnimatePresence mode="wait">
       {!showContent ? (
         <InitialLoad key="loading" />
@@ -57,7 +60,7 @@ const PageClient = () => {
           </AnimatedSection>
 
           <AnimatedSection
-            id="#about"
+            id="about"
             className={styles.section1}
             animation="fadeIn"
             delay={0.5}
@@ -106,6 +109,7 @@ const PageClient = () => {
         </motion.div>
       )}
     </AnimatePresence>
+    </>
   );
 };
 
