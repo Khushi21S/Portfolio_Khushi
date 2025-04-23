@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./pageClient.module.scss";
 import ProgressBar from "../ProgressBar/ProgressBar";
@@ -16,6 +16,7 @@ import AnimatedSection from "../AnimatedSection/AnimatedSection";
 
 const PageClient = () => {
   const [showContent, setShowContent] = useState(false);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -24,6 +25,9 @@ const PageClient = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+
+  
 
   return (
     <AnimatePresence mode="wait">
@@ -36,25 +40,26 @@ const PageClient = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
           className={styles.wrapperContainer}
+          ref={containerRef}
         >
           <p className={styles.emailId}>worksharma.khushi21@gmail.com</p>
-          <ProgressBar />
+          <ProgressBar containerRef={containerRef} />
           
           <AnimatedSection
             id="home"
             className={styles.section1}
-            animation="fadeIn"
+            animation="scaleIn"
             delay={0.2}
-            duration={1}
+            duration={0.8}
           >
             <HomeSection />
             <HomeStats />
           </AnimatedSection>
 
           <AnimatedSection
-            id="about"
+            id="#about"
             className={styles.section1}
-            animation="slideInLeft"
+            animation="fadeIn"
             delay={0.5}
             duration={1}
           >
@@ -63,7 +68,7 @@ const PageClient = () => {
 
           <AnimatedSection
             className={styles.section1}
-            animation="slideInRight"
+            animation="fadeIn"
             delay={0.8}
             duration={1}
           >
@@ -73,7 +78,7 @@ const PageClient = () => {
           <AnimatedSection
             id="experience"
             className={styles.section1}
-            animation="slideInLeft"
+            animation="fadeIn"
             delay={1.1}
             duration={1}
           >
@@ -83,7 +88,7 @@ const PageClient = () => {
           <AnimatedSection
             id="projects"
             className={styles.section1}
-            animation="scaleIn"
+            animation="fadeIn"
             delay={1.4}
             duration={1}
           >

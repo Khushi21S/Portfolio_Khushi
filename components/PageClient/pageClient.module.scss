@@ -1,15 +1,17 @@
 .wrapperContainer {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth;
   padding: 10% 4% 0% 4%;
-  >.emailId{
+  cursor: pointer;
+  
+  >.emailId {
     transform: rotate(-90deg);
     position: fixed;
     left: 0%;
     right: 98%;
-    top:50%;
+    top: 50%;
     font-size: 0.8rem;
   }
 }
@@ -17,33 +19,45 @@
 .section1 {
   width: 100%;
   scroll-margin-top: 100px;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1441px) {
-  .wrapperContainer{
-    top: 20%;
+  .wrapperContainer {
+    padding-top: 15%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .wrapperContainer{
-    >.emailId{
+  .wrapperContainer {
+    padding: 15% 2% 0% 2%;
+    overflow-x: hidden;
+    
+    >.emailId {
       display: none;
     }
+  }
+  
+  .section1 {
+    scroll-margin-top: 80px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .wrapperContainer{
-    margin-top: 215rem;
+  .wrapperContainer {
+    padding: 20% 3% 0% 3%;
+  }
+  
+  .section1 {
+    scroll-margin-top: 60px;
   }
 }
 
-@media screen and (max-width: 325px) {
-  .wrapperContainer{
-    margin-top: 225rem;
-  }
-}
+// @media screen and (max-width: 325px) {
+//   .wrapperContainer {
+//     margin-top: 225rem;
+//   }
+// }
   
   
   

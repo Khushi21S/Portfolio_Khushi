@@ -14,7 +14,7 @@ const ProgressBar = ({containerRef}) => {
             const scrollTop = container.scrollTop;
             const scrollHeight = container.scrollHeight - container.clientHeight;
             const progress = (scrollTop / scrollHeight) * 100;
-            setScrollProgress(progress);
+            setScrollProgress(Math.min(progress, 100));
         };
 
         container.addEventListener('scroll', handleScroll);
@@ -30,7 +30,7 @@ const ProgressBar = ({containerRef}) => {
             <div
                 className={styles.progressBar}
                 style={{ 
-                    height: `${Math.min(scrollProgress, 100)}%`,
+                    height: `${scrollProgress}%`,
                     transition: 'height 0.1s ease-out'
                 }}
             />

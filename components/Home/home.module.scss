@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 567px){
   .outerContainer{
-    padding-top: 30%;
+    padding-top: 15%;
   }
 }
 
@@ -89,7 +89,9 @@
 
 
 @media screen and (max-width: 325px) {
-  .outerContainer > div{
+  .outerContainer{ 
+    padding-top: 25%;
+    > div{
 width: 100%;
    > div  {
     >span {
@@ -100,4 +102,5 @@ width: 100%;
     }
 }
   }
+}
 }

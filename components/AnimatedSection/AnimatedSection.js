@@ -10,7 +10,7 @@ const AnimatedSection = ({
   animation = "fadeIn", 
   delay = 0,
   duration = 0.3,
-  threshold = 0.2
+  threshold = 0.1
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: threshold });
@@ -22,14 +22,14 @@ const AnimatedSection = ({
       exit: { opacity: 0, y: 50 }
     },
     slideInLeft: {
-      initial: { opacity: 0, x: -150 },
-      animate: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: -150 }
+      initial: { opacity: 0, y: 50 },
+      animate: { opacity: 1, y: 0 },
+      exit: { opacity: 0, y: 50 }
     },
     slideInRight: {
-      initial: { opacity: 0, x: 150 },
-      animate: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: 150 }
+      initial: { opacity: 0, y: 50 },
+      animate: { opacity: 1, y: 0 },
+      exit: { opacity: 0, y: 50 }
     },
     scaleIn: {
       initial: { opacity: 0, scale: 0.8 },

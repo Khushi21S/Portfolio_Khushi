@@ -39,10 +39,26 @@ const Stack = () => {
   return (
     <div className={styles.outerContainer}>
       <TitleFlag title={"MY STACK"} />
-      <StackComponent title={"FRONTEND"} items={frontendItems} />
-      <StackComponent title={"BACKEND"} items={backendItems} />
-      <StackComponent title={"DATABASE"} items={databaseItems} />
-      <StackComponent title={"TOOLS"} items={tools} />
+      <StackComponent 
+        title={"FRONTEND"} 
+        items={frontendItems} 
+        delay={0.1}
+      />
+      <StackComponent 
+        title={"BACKEND"} 
+        items={backendItems} 
+        delay={0.2}
+      />
+      <StackComponent 
+        title={"DATABASE"} 
+        items={databaseItems} 
+        delay={0.3}
+      />
+      <StackComponent 
+        title={"TOOLS"} 
+        items={tools} 
+        delay={0.4}
+      />
     </div>
   );
 };

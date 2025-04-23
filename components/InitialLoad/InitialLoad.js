@@ -25,18 +25,18 @@ const InitialLoad = () => {
       >
         <motion.span
           className={styles.firstName}
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -100, opacity: 0 }}
+          exit={{ x: -50, opacity: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           KHUSHI
         </motion.span>
         <motion.span
           className={styles.lastName}
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ x: 100, opacity: 0 }}
+          exit={{ x: 50, opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           SHARMA
