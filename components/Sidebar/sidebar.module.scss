@@ -21,6 +21,8 @@
   justify-content: space-around;
   align-items: flex-start;
   margin-left: 3%;
+  gap: 2rem;
+  overflow-y: auto;
   
 
       >div{
@@ -110,9 +112,6 @@ width: 100%;
   @media screen and (max-width: 950px){
    .sidebar{
     padding: 2rem 0.5rem;
-    .navbar{
-      overflow-y: auto;
-    }
    }
   }
 
