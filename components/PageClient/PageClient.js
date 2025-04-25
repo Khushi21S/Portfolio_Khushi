@@ -45,7 +45,7 @@ const PageClient = () => {
           className={styles.wrapperContainer}
           ref={containerRef}
         >
-          <p className={styles.emailId}>worksharma.khushi21@gmail.com</p>
+          <p className={styles.emailId}>work.khushi21@gmail.com</p>
           <ProgressBar containerRef={containerRef} />
           
           <AnimatedSection

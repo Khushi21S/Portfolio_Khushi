@@ -31,7 +31,14 @@
       .colorChange {
         color: #00ffff;
       }
+
     }
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+   
     .buttonContainer {
       > a > button {
         padding: 0.7rem 1rem;

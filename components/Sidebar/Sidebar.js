@@ -7,7 +7,7 @@ import crossIcon from "../../public/close.png";
 
 
 
-const Sidebar = ({ closeSidebar, containerRef }) => {
+const Sidebar = ({ closeSidebar}) => {
   const navItems = [
     {
       label: "Home",
@@ -118,7 +118,7 @@ const Sidebar = ({ closeSidebar, containerRef }) => {
           </div>
           <div className={styles.contactDetails}>
             <p className={styles.titleText}>GET IN TOUCH</p>
-            <p>worksharma.khushi21@gmail.com</p>
+            <p>work.khushi21@gmail.com</p>
           </div>
         </div>
       </motion.div>

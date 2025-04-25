@@ -107,6 +107,16 @@ width: 100%;
   // }
 
 
+  @media screen and (max-width: 950px){
+   .sidebar{
+    padding: 2rem 0.5rem;
+    .navbar{
+      overflow-y: auto;
+    }
+   }
+  }
+
+
   @media screen and (max-width: 768px){
     .sidebar{
       font-size: 0.9rem;
