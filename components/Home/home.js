@@ -29,7 +29,7 @@ const HomeSection = () => {
           </div>
           <div className={styles.buttonContainer}>
             <a
-              href="https://drive.google.com/file/d/1wtKkr7jI3Af6R0XfVt8fp5XrVEUc1Erg/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/1bX_fQHGLCTkxWvGeMaRif27HCvqbTH21?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
